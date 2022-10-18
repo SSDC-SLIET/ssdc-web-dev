@@ -1,0 +1,39 @@
+body{
+    background-image: url(./favicon.jpeg);
+}
+.text-in-box{
+    opacity: 1;
+}
+.box{
+    width: 80%;
+    margin: auto;
+    background-color: rgba(180, 180, 180, 0.5);
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    font-size: 25px;
+    /* opacity: 0.6; */
+}
+.navbar{
+    width: 80%;
+    margin: auto;
+    background-color: rgba(180, 180, 180, 0.5);
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navbar>ul>a{
+    color: white;
+}
+a{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: 2px 2px rgb(59, 59, 59);
+}
