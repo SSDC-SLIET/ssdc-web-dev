@@ -1,5 +1,5 @@
 body{
-    background-image: url(./favicon.jpeg);
+    background-color: black;
 }
 .text-in-box{
     opacity: 1;
@@ -36,4 +36,9 @@ a{
     cursor: pointer;
     text-decoration: none;
     text-shadow: 2px 2px rgb(59, 59, 59);
+}
+
+.SSDC{
+    margin: auto;
+    color: white;
 }
