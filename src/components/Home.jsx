@@ -1,4 +1,5 @@
 import React from 'react'
+import Contests from './Contests'
 import Navbar from './Navbar'
 import TextBox from './TextBox'
 
@@ -13,6 +14,7 @@ const Home = () => {
       </div>
 
       <TextBox />
+      <Contests />
     </div>
   )
 }
