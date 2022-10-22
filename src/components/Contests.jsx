@@ -5,7 +5,7 @@ const Contests = () => {
 
     useEffect(() => {
         const getContests = async () => {
-            await fetch("https://clist.by:443/api/v1/contest//?username=pg99285&api_key=ef194948bde67ca824788a81565a54d54ca10721")
+            await fetch("https://clist.by:443/api/v1/contest//?username={username}&api_key=API_KEY")
             .then((response) => response.json())
             .then((data) => {
                 const cntst = data.map((contest) => ({
