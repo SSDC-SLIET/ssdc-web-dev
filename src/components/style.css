@@ -1,10 +1,12 @@
-body{
+body {
     background-color: black;
 }
-.text-in-box{
+
+.text-in-box {
     opacity: 1;
 }
-.box{
+
+.box {
     width: 80%;
     margin: auto;
     background-color: rgba(180, 180, 180, 0.5);
@@ -15,7 +17,8 @@ body{
     font-size: 25px;
     /* opacity: 0.6; */
 }
-.navbar{
+
+.navbar {
     width: 80%;
     margin: auto;
     background-color: rgba(180, 180, 180, 0.5);
@@ -28,17 +31,27 @@ body{
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.navbar>ul>a{
+
+.navbar>ul>a {
     color: white;
 }
-a{
+
+a {
     color: white;
     cursor: pointer;
     text-decoration: none;
     text-shadow: 2px 2px rgb(59, 59, 59);
 }
 
-.SSDC{
+.SSDC {
     margin: auto;
     color: white;
+}
+
+footer {
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(59, 59, 59);
+    align-items: center;
+    color: aliceblue;
 }
