@@ -2,22 +2,22 @@ import React, { useState, useEffect } from 'react'
 
 const Contests = () => {
     const [contests, setContests] = useState([]);
+    console.log(contests);
 
     useEffect(() => {
-        const getContests = async () => {
-            await fetch("https://clist.by:443/api/v1/contest//?username={username}&api_key=API_KEY")
+        const getContests = async (siteName) => {
+            await fetch("https://kontests.net/api/v1/"+siteName)
             .then((response) => response.json())
             .then((data) => {
+                console.log(data);
                 const cntst = data.map((contest) => ({
-                    name: contest.objects.event,
-                    link: contest.objects.href
+                    name: contest.name,
+                    link: contest.url
                 }));
                 setContests(cntst);
             });
         };
-
-        getContests();
-        console.log(contests);
+        getContests('codeforces');
       }, []);
 
   return (
