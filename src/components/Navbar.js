@@ -1,25 +1,39 @@
-import React from 'react'
-import "./style.css"
+import React, { useEffect, useState } from "react";
+import "./Navbar.css";
 
 function Navbar() {
+    const [show, handleShow] = useState(false);
+
+  const transitionNavbar = () => {
+    if (window.scrollY > 100){
+      handleShow(true);
+    }
+    else{
+      handleShow(false);
+    }
+  }
+
+  useEffect(() =>{
+    window.addEventListener('scroll', transitionNavbar);
+    return () => window.addEventListener('scroll', transitionNavbar);
+  }, [])
+
   return (
-    <div>
-      <div className="navbar">
-        <div className="ul">
-            <a href="/">Home</a>
-        </div>
-        <div className="ul">
-            <a href="/">Team</a>
-        </div>
-        <div className="ul">
-            <a href="/">Projects</a>
-        </div>
-        <div className="ul">
-            <a href="/">About</a>
-        </div>
+    <div className={`nav ${show && "nav__black"}`}>
+      <div className="nav__contents">
+        <img
+          className="nav__logo"
+          src="Logo"
+          alt="Logo"
+        />
+        <img
+          className="nav__avatar"
+          src="Avatar"
+          alt="Avatar"
+        />
+      </div>
     </div>
-    </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
