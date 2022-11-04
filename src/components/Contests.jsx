@@ -22,7 +22,16 @@ const Contests = () => {
 
   return (
     <div>
-      
+      {contests.map(({ name, link }) => {
+        return (
+          <tr key={name}>
+            {/* <td>{name}</td> */}
+            <td>
+              <strong><a href={link} target="_blank" rel="noreferrer">{name}</a></strong>
+            </td>
+          </tr>
+        );
+      })}
     </div>
   )
 }
