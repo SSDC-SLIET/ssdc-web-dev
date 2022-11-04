@@ -47,11 +47,3 @@ a {
     margin: auto;
     color: white;
 }
-
-footer {
-    width: 100vw;
-    height: 10vh;
-    background-color: rgb(59, 59, 59);
-    align-items: center;
-    color: aliceblue;
-}
