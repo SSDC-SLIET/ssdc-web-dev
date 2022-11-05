@@ -1,0 +1,20 @@
+.footer{
+    color: white;
+    height: 75px;
+    background-color: black;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+.footer__logo{
+    left: 0px;
+    bottom: 8px;
+    width: 55px;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius: 50%;
+    object-fit: contain;
+}

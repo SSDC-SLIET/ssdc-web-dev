@@ -2,31 +2,28 @@
     position: fixed;
     top: 0px;
     width: 100%;
-    padding: 20px;
-    height: 50px;
+    height: 90px;
     z-index: 1;
 
+    display: flex;
+    align-items: center;
     /* Animation */
     transition-timing-function: ease-in;
     transition: all 0.5s;
 }
 
-.nav__contents{
-    display: flex;
-    justify-content: space-between;
-}
-
 .nav__black{
     background-color: black;
+    color: white;
 }
 
 .nav__logo{
     position: fixed;
     left: 0px;
-    top: 10px;
-    width: 90px;
+    width: 55px;
     cursor: pointer;
-    padding-left: 20px;
+    margin-left: 20px;
+    border-radius: 50%;
     object-fit: contain;
 }
 
@@ -35,4 +32,18 @@
     position: fixed;
     right: 20px;
     width: 30px;
+}
+
+.nav__elements{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.nav__element{
+    padding: 10px;
+    cursor: pointer;
+    letter-spacing: 1.42px;
 }
