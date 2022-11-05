@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Slide from 'react-reveal/Slide';
+import Slide from "react-reveal/Slide";
+import "./style.css";
 
 const Contests = () => {
   const [contests, setContests] = useState([]);
@@ -22,25 +23,27 @@ const Contests = () => {
   }, []);
 
   return (
-    <Slide left>
-    <div className="d-flex justify-content-center">
-      <div>
-        {contests.map(({ name, link }) => {
-          return (
-            <tr key={link}>
-              <td>
-                <strong>
-                  <a href={link} target="_blank" rel="noreferrer">
-                    {name}
-                  </a>
-                </strong>
-              </td>
-            </tr>
-          );
-        })}
-      </div>
+    <div className="contests">
+      <Slide left>
+        <div className="d-flex justify-content-center">
+          <div>
+            {contests.map(({ name, link }) => {
+              return (
+                <tr key={link}>
+                  <td>
+                    <strong>
+                      <a href={link} target="_blank" rel="noreferrer">
+                        {name}
+                      </a>
+                    </strong>
+                  </td>
+                </tr>
+              );
+            })}
+          </div>
+        </div>
+      </Slide>
     </div>
-    </Slide>
   );
 };
 

@@ -3,7 +3,7 @@ import Contests from './Contests'
 import Navbar from './Navbar'
 import TextBox from './TextBox'
 import Footer from './Footer'
-import './Home.css'
+import './style.css'
 
 const Home = () => {
   return (
@@ -16,7 +16,7 @@ const Home = () => {
       </div>
 
       <TextBox />
-      <Contests />
+      <Contests className="my-3"/>
       <Footer />
     </div>
   )

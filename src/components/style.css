@@ -1,57 +1,83 @@
-body {
+/* Footer */
+.footer{
+    color: white;
+    height: 75px;
     background-color: black;
 }
 
-.text-in-box {
-    opacity: 1;
-}
-
-.box {
-    width: 80%;
-    margin: auto;
-    background-color: rgba(180, 180, 180, 0.5);
-    border: 2px solid black;
-    border-radius: 20px;
-    padding: 10px;
-    color: white;
-    font-size: 25px;
-    /* opacity: 0.6; */
-}
-
-.navbar {
-    width: 80%;
-    margin: auto;
-    background-color: rgba(180, 180, 180, 0.5);
-    border: 2px solid black;
-    border-radius: 20px;
+footer{
     display: flex;
     justify-content: space-around;
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-top: 10px;
-    padding-bottom: 10px;
 }
-
-.navbar>ul>a {
-    color: white;
-}
-
-a {
-    color: white;
+.footer__logo{
+    left: 0px;
+    bottom: 8px;
+    width: 55px;
     cursor: pointer;
-    text-decoration: none;
-    text-shadow: 2px 2px rgb(59, 59, 59);
+    margin-left: 20px;
+    border-radius: 50%;
+    object-fit: contain;
 }
 
-.SSDC {
-    margin: auto;
+/* Home */
+.SSDC{
+    margin-top: 165px;
+}
+
+/* Navbar */
+.nav{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 65px;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    /* Animation */
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+
+.nav__black{
+    background-color: black;
     color: white;
 }
 
-footer {
-    width: 100vw;
-    height: 10vh;
-    background-color: rgb(59, 59, 59);
+.nav__logo{
+    position: fixed;
+    left: 0px;
+    width: 55px;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.nav__avatar{
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    width: 30px;
+}
+
+.nav__elements{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
-    color: aliceblue;
+    margin-right: 60px;
+}
+
+.nav__element{
+    padding: 10px;
+    cursor: pointer;
+    letter-spacing: 1.42px;
+}
+
+/* Contests */
+.contests{
+    margin: 50px 0px  50px 0px;
+    /* margin-bottom: 50px; */
 }

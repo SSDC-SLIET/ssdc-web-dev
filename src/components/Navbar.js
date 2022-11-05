@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Navbar.css";
+import "./style.css";
 // import logo from '../public/ssdcLogo.jpg'
 
 function Navbar() {
