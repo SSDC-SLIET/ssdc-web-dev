@@ -3,6 +3,7 @@
     color: white;
     height: 75px;
     background-color: black;
+    bottom: 0;
 }
 
 footer{
@@ -22,7 +23,21 @@ footer{
 
 /* Home */
 .SSDC{
-    margin-top: 165px;
+    /* margin-top: 165px; */
+    color: white;
+}
+
+.bg{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background-image:
+        linear-gradient(rgba(36, 36, 36, 0.7),
+            rgba(48, 48, 48, 0.7)),
+        url("https://raw.githubusercontent.com/dellucifer/portfolio/main/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /* Navbar */
@@ -32,12 +47,14 @@ footer{
     width: 100%;
     height: 65px;
     z-index: 1;
+    margin-bottom: 20px;
 
     display: flex;
     align-items: center;
     /* Animation */
     transition-timing-function: ease-in;
     transition: all 0.5s;
+    color: white;
 }
 
 .nav__black{
@@ -79,5 +96,6 @@ footer{
 /* Contests */
 .contests{
     margin: 50px 0px  50px 0px;
-    /* margin-bottom: 50px; */
+    color: white;
+    /* margin-bottom: 50px; */  
 }
