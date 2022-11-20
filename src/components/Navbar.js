@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Navbar.css";
+import "./style.css";
 // import logo from '../public/ssdcLogo.jpg'
 
 function Navbar() {
@@ -23,7 +23,7 @@ function Navbar() {
     <div className={`nav ${show && "nav__black"}`}>
       <img
         className="nav__logo"
-        src={'https://raw.githubusercontent.com/dellucifer/ssdc-web-dev/master/public/ssdc.jpeg'}
+        src={'https://raw.githubusercontent.com/Angad-Godara/ssdc-web-dev/main/public/ssdcLogo.jpg'}
         alt="Logo"
       />
       <div className="nav__elements">

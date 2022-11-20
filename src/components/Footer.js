@@ -1,5 +1,5 @@
 import React from 'react'
-import './Footer.css'
+import './style.css'
 
 function Footer() {
     return (
@@ -7,7 +7,7 @@ function Footer() {
             <footer>
                 <img
                     className="footer__logo"
-                    src={'https://raw.githubusercontent.com/dellucifer/ssdc-web-dev/master/public/ssdc.jpeg'}
+                    src={'https://raw.githubusercontent.com/Angad-Godara/ssdc-web-dev/main/public/ssdcLogo.jpg'}
                     alt="Logo"
                 />
                 <center>MAde by hardComder</center>
