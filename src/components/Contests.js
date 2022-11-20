@@ -3,6 +3,7 @@ import "./style.css";
 
 const Contests = () => {
   const [contests, setContests] = useState([]);
+  const [query, setquery] = useState(null)
   // console.log(contests);
 
   useEffect(() => {
@@ -10,7 +11,7 @@ const Contests = () => {
       await fetch("https://kontests.net/api/v1/" + siteName)
         .then((response) => response.json())
         .then((data) => {
-          // console.log(data);
+          console.log(data);
           const cntst = data.map((contest) => ({
             name: contest.name,
             link: contest.url,
@@ -18,31 +19,30 @@ const Contests = () => {
           setContests(cntst);
         });
     };
-    getContests("codeforces");
-  }, []);
+    getContests(query);
+  }, [query]);
 
   return (
     <div className="contests">
-      <div className="d-flex justify-content-center">
-        <div>
-          {contests.map(({ name, link }) => {
-            return (
-              <tr key={link}>
-                <td>
-                  <ul className="text-center">
-                    <strong>
-                      <a href={link} target="_blank" rel="noreferrer">
-                        {name}
-                      </a>
-                    </strong>
-                  </ul>
-                </td>
-              </tr>
-            );
-          })}
-        </div>
+      <div className="list__buttons">
+        <button onClick={() => setquery("all")}>ALL</button>
+        <button onClick={() => setquery("codeforces")}>Codeforces</button>
+        <button onClick={() => setquery("code_chef")}>Codechef</button>
+        <button onClick={() => setquery("leet_code")}>LeetCode</button>
+        <button onClick={() => setquery("hacker_earth")}>Hacker Earth</button>
       </div>
-    </div>
+      <div className="d-flex flex-column align-items-center mt-3 justify-content-center">
+        {contests.map(({ name, link }) => {
+          return (
+            <div className="list__container">
+              <a a className="list__contents" href={link} target="_blank" rel="noreferrer" >
+                {name}
+              </a>
+            </div>
+          );
+        })}
+      </div >
+    </div >
   );
 };
 
