@@ -31,11 +31,13 @@ const Contests = () => {
               return (
                 <tr key={link}>
                   <td>
+                    <ul className="text-center">
                     <strong>
                       <a href={link} target="_blank" rel="noreferrer">
                         {name}
                       </a>
                     </strong>
+                    </ul>
                   </td>
                 </tr>
               );
