@@ -1,37 +1,46 @@
 import React, { useEffect, useState } from "react";
-import "./Navbar.css";
+import "./style.css";
+// import logo from '../public/ssdcLogo.jpg'
 
 function Navbar() {
-    const [show, handleShow] = useState(false);
+  const [show, handleShow] = useState(false);
 
   const transitionNavbar = () => {
-    if (window.scrollY > 100){
+    if (window.scrollY > 100) {
       handleShow(true);
     }
-    else{
+    else {
       handleShow(false);
     }
   }
 
-  useEffect(() =>{
+  useEffect(() => {
     window.addEventListener('scroll', transitionNavbar);
     return () => window.addEventListener('scroll', transitionNavbar);
   }, [])
 
   return (
     <div className={`nav ${show && "nav__black"}`}>
-      <div className="nav__contents">
-        <img
-          className="nav__logo"
-          src="Logo"
-          alt="Logo"
-        />
-        <img
-          className="nav__avatar"
-          src="Avatar"
-          alt="Avatar"
-        />
+      <img
+        className="nav__logo"
+        src={'https://raw.githubusercontent.com/Angad-Godara/ssdc-web-dev/main/public/ssdcLogo.jpg'}
+        alt="Logo"
+      />
+      <div className="nav__elements">
+        <div className="nav__element">Home</div>
+        <div className="nav__element">Community</div>
+        <div className="nav__element">Achievents</div>
+        <div className="nav__element">Media</div>
+        <div className="nav__element">Alumni</div>
+        <div className="nav__element">About Us</div>
+        <div className="nav__element">Contact Us</div>
       </div>
+      <img
+        className="nav__avatar"
+        src={'https://avatars0.githubusercontent.com/u/33479836?v=4'}
+        alt="Avatar"
+      />
+
     </div>
   );
 }

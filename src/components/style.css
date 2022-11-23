@@ -1,57 +1,165 @@
-body {
-    background-color: black;
-}
-
-.text-in-box {
-    opacity: 1;
-}
-
-.box {
-    width: 80%;
-    margin: auto;
-    background-color: rgba(180, 180, 180, 0.5);
-    border: 2px solid black;
-    border-radius: 20px;
-    padding: 10px;
+/* Footer */
+.footer{
     color: white;
-    font-size: 25px;
-    /* opacity: 0.6; */
+    height: 75px;
+    background-color: black;
+    bottom: 0;
 }
 
-.navbar {
-    width: 80%;
-    margin: auto;
-    background-color: rgba(180, 180, 180, 0.5);
-    border: 2px solid black;
-    border-radius: 20px;
+footer{
     display: flex;
     justify-content: space-around;
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-top: 10px;
-    padding-bottom: 10px;
 }
-
-.navbar>ul>a {
-    color: white;
-}
-
-a {
-    color: white;
+.footer__logo{
+    left: 0px;
+    bottom: 8px;
+    width: 55px;
     cursor: pointer;
-    text-decoration: none;
-    text-shadow: 2px 2px rgb(59, 59, 59);
+    margin-left: 20px;
+    border-radius: 50%;
+    object-fit: contain;
 }
 
-.SSDC {
-    margin: auto;
+/* Home */
+.SSDC{
+    /* margin-top: 165px; */
     color: white;
 }
 
-footer {
-    width: 100vw;
-    height: 10vh;
-    background-color: rgb(59, 59, 59);
+.heading{
+    padding-top: 70px;
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-image:
+        linear-gradient(rgba(36, 36, 36, 0.7),
+            rgba(48, 48, 48, 0.7)),
+        url("https://raw.githubusercontent.com/dellucifer/portfolio/main/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Navbar */
+.nav{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 65px;
+    z-index: 1;
+    margin-bottom: 20px;
+
+    display: flex;
     align-items: center;
-    color: aliceblue;
+    /* Animation */
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+    color: white;
+}
+
+.nav__black{
+    background-color: black;
+    color: white;
+}
+
+.nav__logo{
+    position: fixed;
+    left: 0px;
+    width: 45px;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.nav__avatar{
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    width: 30px;
+}
+
+.nav__elements{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.nav__element{
+    padding: 10px;
+    cursor: pointer;
+    letter-spacing: 1.42px;
+}
+
+/* Contests */
+.contests{
+    margin: 50px 0px  50px 0px;
+    color: white;
+    /* margin-bottom: 50px; */  
+}
+
+.contest__link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.list__buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list__buttons > button{
+    margin: 10px 10px;
+    padding: 8px;
+    border-radius: 6px;
+    width: 10%;
+    transition: all .5s ease;
+    color: #fff;
+    border: 3px solid white;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color : transparent;
+    outline: none;
+}
+
+.list__buttons > button:hover {
+    color: #001F3F;
+    background-color: #fff;
+}
+
+.list__container{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 30% auto 30% 10%;
+}
+
+.list__container > span{
+    text-align: center;
+}
+
+.list__container > a{
+    text-align: center;
+}
+
+.grid__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:transparent;
+    border: 1px solid rgba(245, 237, 237, 0.8);
+    padding: 8px;
+    transition: all .5s ease;
+  }
+
+  .grid__item:hover {
+    color: #000000;
+    background-color: rgba(49, 255, 228, 0.852);
 }
