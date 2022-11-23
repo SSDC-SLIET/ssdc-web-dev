@@ -163,3 +163,12 @@ footer{
     color: #000000;
     background-color: rgba(49, 255, 228, 0.852);
 }
+
+/* Members */
+.members__container{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-items: center;
+    grid-row-gap: 20px;
+}

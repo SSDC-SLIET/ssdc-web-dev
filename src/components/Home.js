@@ -4,9 +4,11 @@ import Navbar from './Navbar'
 import TextBox from './TextBox'
 import Footer from './Footer'
 import './style.css'
+import Card from './Card'
 
 const Home = () => {
   return (
+
     <div className="SSDC bg">
       <Navbar />
       <div className='heading'>
@@ -15,6 +17,7 @@ const Home = () => {
       </div>
       <TextBox />
       <Contests className="my-3" />
+      <Card />
       <Footer />
     </div>
   )
