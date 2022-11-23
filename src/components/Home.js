@@ -7,16 +7,14 @@ import './style.css'
 
 const Home = () => {
   return (
-    <div className="SSDC bg">
-      <Navbar />
-      <div className='heading'>
+      <div className="SSDC bg">
+        <Navbar />
         <h1 className='text-center display-1'>SSDC</h1>
         <h3 className='text-center display-5'>Hive of Developers</h3>
+        <TextBox />
+        <Contests className="my-3"/>
+        <Footer />
       </div>
-      <TextBox />
-      <Contests className="my-3" />
-      <Footer />
-    </div>
   )
 }
 
