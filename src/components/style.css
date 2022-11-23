@@ -1,57 +1,101 @@
-body {
-    background-color: black;
-}
-
-.text-in-box {
-    opacity: 1;
-}
-
-.box {
-    width: 80%;
-    margin: auto;
-    background-color: rgba(180, 180, 180, 0.5);
-    border: 2px solid black;
-    border-radius: 20px;
-    padding: 10px;
+/* Footer */
+.footer{
     color: white;
-    font-size: 25px;
-    /* opacity: 0.6; */
+    height: 75px;
+    background-color: black;
+    bottom: 0;
 }
 
-.navbar {
-    width: 80%;
-    margin: auto;
-    background-color: rgba(180, 180, 180, 0.5);
-    border: 2px solid black;
-    border-radius: 20px;
+footer{
     display: flex;
     justify-content: space-around;
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-top: 10px;
-    padding-bottom: 10px;
 }
-
-.navbar>ul>a {
-    color: white;
-}
-
-a {
-    color: white;
+.footer__logo{
+    left: 0px;
+    bottom: 8px;
+    width: 55px;
     cursor: pointer;
-    text-decoration: none;
-    text-shadow: 2px 2px rgb(59, 59, 59);
+    margin-left: 20px;
+    border-radius: 50%;
+    object-fit: contain;
 }
 
-.SSDC {
-    margin: auto;
+/* Home */
+.SSDC{
+    /* margin-top: 165px; */
     color: white;
 }
 
-footer {
-    width: 100vw;
-    height: 10vh;
-    background-color: rgb(59, 59, 59);
+.bg{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background-image:
+        linear-gradient(rgba(36, 36, 36, 0.7),
+            rgba(48, 48, 48, 0.7)),
+        url("https://raw.githubusercontent.com/dellucifer/portfolio/main/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Navbar */
+.nav{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 65px;
+    z-index: 1;
+    margin-bottom: 20px;
+
+    display: flex;
     align-items: center;
-    color: aliceblue;
+    /* Animation */
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+    color: white;
+}
+
+.nav__black{
+    background-color: black;
+    color: white;
+}
+
+.nav__logo{
+    position: fixed;
+    left: 0px;
+    width: 55px;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.nav__avatar{
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    width: 30px;
+}
+
+.nav__elements{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.nav__element{
+    padding: 10px;
+    cursor: pointer;
+    letter-spacing: 1.42px;
+}
+
+/* Contests */
+.contests{
+    margin: 50px 0px  50px 0px;
+    color: white;
+    /* margin-bottom: 50px; */  
 }
