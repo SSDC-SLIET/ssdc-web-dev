@@ -1,1 +1,1 @@
-SSDC SLIET Website Development Committee.
+SSDC SLIET Website Development Committee. 
