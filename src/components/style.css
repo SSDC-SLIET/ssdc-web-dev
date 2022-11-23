@@ -27,9 +27,13 @@ footer{
     color: white;
 }
 
+.heading{
+    padding-top: 100px;
+}
+
 .bg{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     top: 0;
     background-image:
         linear-gradient(rgba(36, 36, 36, 0.7),
@@ -65,7 +69,7 @@ footer{
 .nav__logo{
     position: fixed;
     left: 0px;
-    width: 55px;
+    width: 45px;
     cursor: pointer;
     margin-left: 20px;
     border-radius: 50%;
@@ -98,4 +102,77 @@ footer{
     margin: 50px 0px  50px 0px;
     color: white;
     /* margin-bottom: 50px; */  
+}
+
+.contest__link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.list__buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list__buttons > button{
+    margin: 10px 10px;
+    padding: 8px;
+    border-radius: 6px;
+    width: 10%;
+    transition: all .5s ease;
+    color: #fff;
+    border: 3px solid white;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color : transparent;
+    outline: none;
+}
+
+.list__buttons > button:hover {
+    color: #001F3F;
+    background-color: #fff;
+}
+
+.list__container{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 30% auto 30% 10%;
+}
+
+.list__container > span{
+    text-align: center;
+}
+
+.list__container > a{
+    text-align: center;
+}
+
+.grid__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:transparent;
+    border: 1px solid rgba(245, 237, 237, 0.8);
+    padding: 8px;
+    transition: all .5s ease;
+  }
+
+  .grid__item:hover {
+    color: #000000;
+    background-color: rgba(49, 255, 228, 0.852);
+}
+
+/* Text */
+.text{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text > img{
+    width: 40%;
+    margin: 20px 0px;
+    border-radius: 10px;
+    /* height: 200px; */
 }
