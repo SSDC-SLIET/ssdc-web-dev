@@ -2,7 +2,8 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import React from 'react'
 import './style.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {SiLinkedin} from 'react-icons/si'
+import {MdOutlineEmail} from 'react-icons/md'
 
 function BasicExample() {
     return (
@@ -14,9 +15,7 @@ function BasicExample() {
                     Some quick example text to build on the card title and make up the
                     bulk of the card's content.
                 </Card.Text>
-                <a><FontAwesomeIcon icon="fa-brands fa-linkedin" /></a>
-                <a><FontAwesomeIcon icon="fa-brands fa-github" /></a>
-                <i class="fa-brands fa-linkedin"></i>
+                <SiLinkedin /><MdOutlineEmail />
             </Card.Body>
         </Card>
     );
